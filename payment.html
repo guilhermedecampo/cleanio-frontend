@@ -60,7 +60,7 @@
 		<section id="contacts">
 			<div class="row">
 				<div class="col-xs-12 col-sm-6 col-sm-offset-3 intro">
-					<h1>Inscription</h1>
+					<h1>Payment</h1>
 					<p>And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers.</p>
 				</div>
 			</div>
@@ -69,23 +69,28 @@
 					<form id="contact-form" action="/" method="post">
 						<div class="row">	
 							<div class="col-xs-12 formContainer">
-								<input type="text" name="email" id="email" value="" class="requiredField email" placeholder="Adresse e-mail">
+								<input type="text" name="email" id="email" value="" class="requiredField email" placeholder="Numéro de carte">
 							</div>
+						</div>	
+						<div class="row">
+							<div class="col-xs-6 formContainer">
+								<input type="text" name="name" id="name" value="" class="requiredField" placeholder="Mois">
+							</div>
+							<div class="col-xs-6 formContainer">
+								<input type="text" name="name" id="name" value="" class="requiredField" placeholder="Année">
+							</div>
+						</div>	
+						<div class="row">
 							<div class="col-xs-12 formContainer">
-								<input type="text" name="name" id="name" value="" class="requiredField" placeholder="Password">
+								<input type="text" name="name" id="name" value="" class="requiredField" placeholder="CCV">
 							</div>
-							<div class="col-xs-12 formContainer">
-								<input type="text" name="name" id="name" value="" class="requiredField" placeholder="Nom">
-							</div>
-							<div class="col-xs-12 formContainer">
-								<input type="text" name="name" id="name" value="" class="requiredField" placeholder="Prénom">
-							</div>
-							<div class="col-xs-12 formContainer">
-								<input type="text" name="name" id="name" value="" class="requiredField" placeholder="Téléphone">
-							</div>
+						</div>
+						<div class="row">		
 							<div class="col-xs-12 formContainer">
 								<input type="hidden" name="submitted" id="submitted" class="button" value="SEND"><button id="submit" class="btn" type="submit">SUIVANT</button>
 							</div>
+						</div>
+						<div class="row">	
 							<div class="col-xs-12 formContainer">
 								<p id="error" data-alert class="alert">Please fill in all data correctly.</p>
 								<p id="thanks" data-alert class="alert alert-success">Thanks. We'll get back to you as soon as possible.</p>
